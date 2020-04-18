@@ -162,3 +162,34 @@ main .colonna.destra .box {
   padding: 15px;
   border-radius: 5px;
 }
+
+/* caratteristiche footer */
+footer .pie-di-pagina {
+border-radius: 5px;
+background-color: white;
+}
+
+footer .firma {
+  border-bottom: 0.5px solid grey;
+}
+
+footer .firma p {
+  color: grey;
+  text-align: center;
+}
+
+footer .social i {
+  color: darkgrey;
+  font-size: 40px;
+}
+
+footer .pie-di-pagina .social ul li {
+  float: left;
+  text-align: center;
+  width: 33%;
+  padding: 40px 0;
+}
+
+footer .pie-di-pagina .social li a {
+  color: gray;
+  font-size: 40px;
