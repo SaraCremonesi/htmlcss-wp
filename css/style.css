@@ -1,94 +1,84 @@
-/* reset */
+/* RESET */
 * {
+  padding: 0;
   margin: 0;
-  paddin: 0;
   box-sizing: border-box;
+}
+/* RESET */
+
+/* STILI GENERALI */
+.container {
+  font-family: 'Quicksand', sans-serif;
+  width: 1024px;
+  margin: 2% auto;
 }
 
 body {
   background-image: url('../img/sfondo.png');
 }
 
-/* centratura pagina */
-.container {
-  width: 1024px;
-  margin: auto;
-}
-
-/* margine alto della pagina */
-header {
-  margin-top: 2%;
-}
-
-/* caratteristiche dell'header */
-header .titolo {
-  background-image: url('../img/background-header.jpg');
-  height: 250px;
-  text-align: center;
-  color: white;
-  border: 4px solid white;
-  position: relative;
-}
-
-/* centratura dei titoli */
-.testo {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50% , -50%);
-  position: absolute;
-  font-family: 'Nunito', sans-serif;
-}
-
-/* caratteristiche h1 */
-.titolo .testo h1 {
-  font-size: 60px;
-  border: 4px solid white;
-}
-
-/* menu */
-header .menu {
-  background-color: gray;
-}
-
-/* caratteristiche lista menu */
-ul {
-  width: 55%;
-  margin: auto;
-  list-style-type: none;
-  line-height: 40px;
-}
-
 li {
-  display: inline-block;
-  font-size: 10px;
-  font-family: 'Nunito', sans-serif;
-  font-weight: bold;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+/* STILI GENERALI */
+
+/* caratteristiche titolo intestazione */
+header .intestazione {
+  background-image: url('../img/background-header.jpg');
+  border: 8px solid white;
   color: white;
-  margin-right: 20px;
+  position: relative;
+  height: 350px;
 }
 
-li:last-child {
-  margin-right: 0;
+header .intestazione .titolo h1 {
+  border: 5px solid white;
+  font-size: 100px;
+  letter-spacing: 15px;
 }
 
-li:hover {
-  background-color: black;
+header .intestazione .titolo h3 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 40px;
+  letter-spacing: 5px;
 }
 
-/* caratteristiche corpo pagina */
-main {
-  margin-top: 2%;
+header .intestazione .titolo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
 }
 
-/* caratteristiche colonne */
-.col {
-  background-color: white;
-  float: left;
+/* caratteristiche menu intestazione */
+header .menu {
+  background-color: grey;
+  margin-bottom: 2%;
 }
 
-/* centratura del corpo */
-main::after {
-  content: '';
-  display: table;
-  clear: both;
+header .menu ul {
+  width: 50%;
+  margin: auto;
+  line-height: 30px;
 }
+
+header .menu ul li {
+  display: inline-block;
+}
+
+a {
+  color: white;
+  padding: 9px;
+  font-size: 10px;
+}
+
+a:hover {
+  background-color: darkgray;
+}
+
+/* caratteristiche main */
